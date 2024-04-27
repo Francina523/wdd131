@@ -1,13 +1,12 @@
-const pattern = /last_modif\s*=\s*([^;]*)/;
+// Wait for the DOM to fully load before executing JavaScript
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the last modified date of the HTML document
+    const lastModified = document.lastModified;
 
-const lastVisit = parseFloat(document.cookie.replace(pattern, "$1"));
-const lastModif = Date.parse(document.lastModified);
+    // Find the element with the ID "lastModified" in the footer
+    const lastModifiedElement = document.getElementById('lastModified');
 
-if (Number.isNaN(lastVisit) || lastModif > lastVisit) {
-    document.cookie = `last_modif=${Date.now()}; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=${location.pathname
-        }`;
+    // Update the text content of the element with the last modified date
+    lastModifiedElement.textContent += lastModified;
+});
 
-    if (isFinite(lastVisit)) {
-        alert("This page has been changed!");
-    }
-}
