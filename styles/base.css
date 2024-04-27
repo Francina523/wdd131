@@ -47,11 +47,39 @@ main {
 }
 
 .card {
+    grid-row: 1/5;
     background-color: #eb97c7;
     border: 1px solid #9b6095;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 20px;
+}
+.background1 {
+    width: 100%;
+  }
+  .myself-img1 {
+    grid-row: 6/10;
+    width: 100%;
+    color: #38662d;
+    border: 10px #38662d;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #423f32;
+}
+.byo-image  {
+    grid-row: 6/10;
+    width: 100%;
+    color: #38662d;
+    border: 10px #38662d;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #423f32;
+}
+
+.myself-img1:hover, .byo-image:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+main section img {
+    box-sizing: border-box;
 }
 
 footer {
