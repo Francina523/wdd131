@@ -1,0 +1,24 @@
+/* media-query.css */
+
+body {
+    font-family: 'Roboto', sans-serif; /* Use Google Font Roboto */
+}
+
+header, main, footer {
+    max-width: 640px; /* Maximum width */
+    margin: 1rem auto; /* Centered on the page with margin */
+    border: 1px solid #ccc; /* Faint border */
+    padding: 20px; /* Padding for content */
+    background-color: #f0f5ff; /* Blueish background color (light blue) */
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: #fff;
+}

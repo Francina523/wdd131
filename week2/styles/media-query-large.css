@@ -1,0 +1,25 @@
+/* media-query-large.css */
+
+/* Media query for viewport width 500px or greater */
+@media screen and (min-width: 500px) {
+    header {
+        background-color: #000; /* Black background */
+        color: #fff; /* White text color */
+        padding: 15px; /* Adjust padding as needed */
+        text-align: center; /* Center-align text */
+    }
+
+    main {
+        display: flex; /* Use flexbox */
+        justify-content: space-between; /* Distribute columns equally */
+    }
+
+    main section {
+        width: 48%; /* Each section takes up 48% of the main element */
+        margin-right: 2%; /* Add spacing between columns */
+    }
+
+    footer {
+        /* No specific changes for footer in this media query */
+    }
+}
