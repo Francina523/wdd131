@@ -23,7 +23,9 @@ header {
     padding: 1rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: right;
+    max-width: auto;
+    font-weight: 800;
 }
 
 /* Show navigation menu when toggled */
@@ -75,27 +77,42 @@ nav a:hover {
     cursor: pointer;
 }
 
+#home-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#home-msg h1 {
+    text-align: center;
+    font-size: 22px;
+    color: #041014;
+}
+
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
     display: grid;
-    grid-template-columns: 1fr; /* Default to single column layout */
+    grid-column:(10, 1fr); /* Default to single column layout */
+    grid-row: 4/9;
     gap: 20px;
-}
-
-h2 {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
 }
 
 figure {
     text-align: center;
+    border: 10px #d2c9b8;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #d2c9b8;
+    margin: 10px 0;
 }
 
+figure:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
 figcaption {
     font-style: italic;
+    font-weight: bold;
     color: #041014;
 }
 
@@ -103,4 +120,6 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #b3ccd9;
+    min-width: auto;
+    font-weight: bold;
 }
