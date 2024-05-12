@@ -1,9 +1,9 @@
 :root {
     --primary-color: #4CAF50;
     --secondary-color: #333;
-    --accent1-color:rgba(255, 255, 0, 0.8);
-    --accent2-color: red;
-    --accent3-color: #fff;
+    --accent-color-1: rgba(255, 255, 0, 0.8);
+    --accent-color-2: red;
+    --accent-color-3: #fff;
 }
 
 /* Global styles */
@@ -33,7 +33,6 @@ header {
 .hero img {
     width: 100%;
     height: auto;
-    background-color: red;
 }
 
 .hero-overlay {
@@ -47,57 +46,54 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-weight: bold;
+    font-weight: bold; /* Note: font-weight for overlay? Check if this is intended */
 }
 
 .data-section {
     position: absolute;
     top: 20px;
     left: 20px;
-    background-color: rgba(255, 255, 0, 0.8); /* Yellow background with transparency */
+    background-color: var(--accent-color-1); /* Use accent color 1 variable */
     padding: 20px;
     border-radius: 5px;
-    text-align: left; /* Align text to the left */
-    transition: transform .5s;
+    text-align: left;
+    transition: transform 0.5s;
     box-shadow: 5px 5px 10px red;
     font-weight: bold;
 }
 
 h2 {
     background-color: red;
-    color: white; /* Optionally set text color to white for contrast */
-    padding: 10px; /* Optional: Add padding for spacing */
+    color: white;
+    padding: 10px;
 }
 
-/* Styling for the weather section */
 .weather-section {
-    position: absolute; /* Fixed position to keep it in view */
-    bottom: 20px; /* Distance from the bottom of the viewport */
-    right: 20px; /* Distance from the right of the viewport */
-    background-color: rgba(255, 255, 0, 0.8); /* Yellow background with transparency */
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--accent-color-1); /* Use accent color 1 variable */
     padding: 20px;
     border-radius: 5px;
-    text-align: right; /* Align text and content to the right */
-    transition: transform .5s;
-    box-shadow: 5px 5px 10px red; 
+    text-align: right;
+    transition: transform 0.5s;
+    box-shadow: 5px 5px 10px red;
 }
 
-.weather-section:hover , .data-section:hover {
-    opacity: .6;
+.weather-section:hover, .data-section:hover {
+    opacity: 0.6;
     transform: scale(1.1);
 }
 
-/* Weather icon styling */
 .weather-icon img {
-    width: 40px; /* Adjust the width of the SVG icon */
-    height: auto; /* Maintain aspect ratio */
+    width: 40px;
+    height: auto;
 }
 
 footer {
     text-align: center;
     padding: 20px;
     background-color: var(--primary-color); /* Green footer background using primary color variable */
-    min-width: auto;
     font-weight: bold;
 }
 
@@ -109,7 +105,7 @@ footer {
         margin-bottom: 20px;
         padding: 20px;
         text-align: left;
-        background-color: rgba(255, 255, 0, 0.8); /* Yellow background with transparency */
+        background-color: var(--accent-color-1); /* Use accent color 1 variable */
         border-radius: 5px;
     }
 }
