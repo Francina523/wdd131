@@ -23,7 +23,7 @@ header {
 .hero img {
     width: 100%;
     height: auto;
-    background-image: red;
+    background-color: red;
 }
 
 .hero-overlay {
