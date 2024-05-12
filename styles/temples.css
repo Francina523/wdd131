@@ -1,9 +1,9 @@
 /* General styles for mobile-first design */
 :root {
     /* change the values below to your colors from your palette */
-    --primary-color: #2596be   ;
-    --secondary-color: #041014 ;
-    --accent1-color: #EE1A10 ;
+    --primary-color: #2596be;
+    --secondary-color: #041014;
+    --accent1-color: #EE1A10;
     --accent2-color: #d2c9b8;
 }
 
@@ -36,7 +36,8 @@ nav ul.show {
 nav ul {
     list-style-type: none;
     padding: 0;
-    display: none; /* Hide menu by default */
+    display: none;
+    /* Hide menu by default */
 }
 
 nav ul li {
@@ -55,7 +56,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #EE1A10 ;
+    color: #EE1A10;
     font-size: 18px;
 }
 
@@ -66,7 +67,8 @@ nav a:hover {
 
 /* Hamburger menu button styles */
 #hamburger {
-    display: block; /* Show hamburger button */
+    display: block;
+    /* Show hamburger button */
     position: absolute;
     top: 10px;
     right: 10px;
@@ -93,7 +95,8 @@ main {
     margin: 0 auto;
     padding: 1rem;
     display: grid;
-    grid-column:(10, 1fr); /* Default to single column layout */
+    grid-column: (10, 1fr);
+    /* Default to single column layout */
     grid-row: 4/9;
     gap: 20px;
 }
@@ -110,6 +113,7 @@ figure:hover {
     opacity: .6;
     transform: scale(1.1);
 }
+
 figcaption {
     font-style: italic;
     font-weight: bold;

@@ -1,0 +1,10 @@
+/* Larger screen styles (min-width: 768px) */
+.data-section {
+    top: 20px;
+    left: 20px;
+}
+
+.weather-section {
+    bottom: 20px;
+    right: 20px;
+}

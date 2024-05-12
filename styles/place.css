@@ -1,0 +1,102 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text color */
+}
+
+header {
+    background-color: #4CAF50; /* Green header background */
+    text-align: center;
+    padding: 20px 0;
+    color: #fff; /* White text color */
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    background-image: red;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.data-section {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 0, 0.8); /* Yellow background with transparency */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left; /* Align text to the left */
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px red;
+
+}
+
+h2 {
+    background-color: red;
+    color: white; /* Optionally set text color to white for contrast */
+    padding: 10px; /* Optional: Add padding for spacing */
+}
+/* Styling for the weather section */
+.weather-section {
+    position: absolute; /* Fixed position to keep it in view */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
+    background-color: rgba(255, 255, 0, 0.8); /* Yellow background with transparency */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: right; /* Align text and content to the right */
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px red; 
+}
+
+.weather-section:hover , .data-section:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+/* Weather icon styling */
+.weather-icon img {
+    width: 40px; /* Adjust the width of the SVG icon */
+    height: auto; /* Maintain aspect ratio */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    min-width: auto;
+    font-weight: bold;
+}
+/* Media query for mobile view */
+@media (max-width: 767px) {
+    .data-section, .weather-section {
+        position: static;
+        width: auto;
+        margin-bottom: 20px;
+        padding: 20px;
+        text-align: left;
+        background-color: rgba(255, 255, 0, 0.8); /* Yellow background with transparency */
+        border-radius: 5px;
+    }
+}
