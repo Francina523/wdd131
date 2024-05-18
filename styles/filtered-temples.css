@@ -10,15 +10,26 @@ header {
     color: white;
 }
 
+/* CSS for navigation */
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
 nav ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
 }
 
 nav ul li {
     display: inline;
     margin-right: 20px;
+}
+
+/* Apply hover effect directly to list items */
+nav ul li:hover {
+    background-color: #444; /* Change background color on hover */
 }
 
 nav ul li a {
