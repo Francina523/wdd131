@@ -1,0 +1,8 @@
+/* Add specific styles for larger temples */
+.temple-card {
+    max-width: 400px;
+}
+
+.temple-card img {
+    max-height: 200px;
+}
