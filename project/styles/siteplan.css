@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+header {
+    background-color: #004d40;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+section {
+    margin-bottom: 20px;
+}
+h1, h2, h3 {
+    color: #004d40;
+}
+.color-schema {
+    display: flex;
+    gap: 10px;
+}
+.color-schema div {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+}
+.color1 {
+    background-color: #004d40;
+}
+.color2 {
+    background-color: #00796b;
+}
