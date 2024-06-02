@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Last Modified Date
     const lastModifiedSpan = document.getElementById('last-modified');
     if (lastModifiedSpan) {
-        const lastModified = new Date(document.lastModified);
+        const lastModifiedDate = new Date(); // Assuming this is the current date
         const options = { 
             year: 'numeric', 
             month: 'long', 
@@ -48,6 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
             hour: 'numeric', 
             minute: 'numeric' 
         };
-        lastModifiedSpan.textContent = lastModified.toLocaleDateString('en-US', options);
+        lastModifiedSpan.textContent = lastModifiedDate.toLocaleDateString('en-US', options);
     }
 });

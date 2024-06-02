@@ -38,14 +38,14 @@ nav a {
 
 /* Apply styles to active link */
 nav a.active {
-    background-color: #005e51; /* Active page color */
+    color: #1e88e5; /* Active page color */
     border-radius: 5px; /* Rounded corners */
     padding: 0.5em 1em; /* Larger padding for better visibility */
 }
 
 /* Add hover effect to active link */
 nav a.active:hover {
-    background-color: #005e51; /* Active page color on hover */
+    color: #1e88e5; /* Active page color on hover */
 }
 
 .logo-container {
