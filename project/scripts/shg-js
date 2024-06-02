@@ -1,0 +1,53 @@
+document.addEventListener("DOMContentLoaded", () => {
+    // Dynamic Resource Content
+    const resources = [
+        { id: 1, type: "Mental Health", title: "Dealing with Anxiety", description: "Techniques and support for managing anxiety." },
+        { id: 2, type: "Addiction Recovery", title: "Overcoming Addiction", description: "Steps and support for addiction recovery." },
+        { id: 3, type: "Grief Counseling", title: "Healing after Loss", description: "Support for dealing with grief and loss." },
+    ];
+
+    const resourceContainer = document.getElementById('resource-container');
+    if (resourceContainer) {
+        resources.forEach(resource => {
+            const resourceElement = document.createElement('div');
+            resourceElement.className = 'resource';
+            resourceElement.innerHTML = `
+                <h3>${resource.title}</h3>
+                <p>Type: ${resource.type}</p>
+                <p>${resource.description}</p>
+            `;
+            resourceContainer.appendChild(resourceElement);
+        });
+    }
+
+    // Form Submission Handling
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const formData = new FormData(contactForm);
+            const data = {};
+            formData.forEach((value, key) => data[key] = value);
+
+            // Save form data to localStorage
+            localStorage.setItem('contactFormData', JSON.stringify(data));
+
+            // Display success message
+            alert('Form submitted successfully!');
+        });
+    }
+
+    // Last Modified Date
+    const lastModifiedSpan = document.getElementById('last-modified');
+    if (lastModifiedSpan) {
+        const lastModified = new Date(document.lastModified);
+        const options = { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric', 
+            hour: 'numeric', 
+            minute: 'numeric' 
+        };
+        lastModifiedSpan.textContent = lastModified.toLocaleDateString('en-US', options);
+    }
+});

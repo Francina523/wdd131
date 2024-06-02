@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Francina Shanana. PROJECT W06">
+    <meta name="author" content="Francina Shanana">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/shg.css">
+</head>
+<body>
+    <header>
+        <!-- Logo and Text -->
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Self-Help Group Guide Logo" class="logo">
+            <span class="logo-text">Self Help Group Guide</span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="types.html">Types of Groups</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="siteplan.html">Site Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Contact Us</h1>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href="attributions.html">Attributions</a>
+        <p>&copy; 2024 Self-Help Group Guide</p>
+        <p>&copy; <span id="2024"></span> Francina Shanana, Bulawayo/Zimbabwe</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+    <script src="scripts/shg-js"></script>
+</body>
+</html>

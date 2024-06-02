@@ -1,0 +1,311 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #e0f2f1; /* Light background for overall site */
+}
+
+header {
+    background-color: #004d40;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between; /* Align logo and nav items horizontally */
+    align-items: center; /* Align logo and nav items vertically */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Apply styles to active link */
+nav a.active {
+    background-color: #005e51; /* Active page color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 0.5em 1em; /* Larger padding for better visibility */
+}
+
+/* Add hover effect to active link */
+nav a.active:hover {
+    background-color: #005e51; /* Active page color on hover */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add spacing between logo and text */
+}
+
+.logo-text {
+    font-size: 1.2em; /* Adjust font size as needed */
+}
+
+main {
+    flex: 1;
+    padding: 2em;
+    position: relative; /* Add position relative to enable z-index */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: -1em; /* Adjust margin to avoid overlapping with header */
+    z-index: 1; /* Ensure hero section is below header */
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+/* About Section */
+.about {
+    background-color: #fff; /* White background for about section */
+    padding: 2em;
+    margin-bottom: 20px;
+}
+
+.about h1 {
+    color: #004d40; /* Dark green for headings */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about h2 {
+    color: #00796b; /* Light green for subheadings */
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+
+.about p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    border-left: 5px solid #00796b; /* Light green border for testimonials */
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+blockquote p {
+    font-style: italic;
+}
+
+blockquote footer {
+    margin-top: 5px;
+}
+
+/* Group Types Section */
+.group-types {
+    background-color: #ffffff;
+    padding: 2em;
+    margin-top: 2em;
+    border-radius: 10px;
+}
+
+.group-types ul {
+    list-style-type: disc;
+    padding-left: 2em;
+}
+
+.group {
+    margin-bottom: 40px; /* Add spacing between groups */
+}
+
+.group h2 {
+    color: #00796b; /* Light green for subheadings */
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.group p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.group-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.group-image {
+    width: calc(33.33% - 10px); /* Adjust image width */
+    height: auto;
+    margin-bottom: 10px; /* Add spacing between images */
+}
+
+/* Resources Section */
+.resources {
+    background-color: #ffffff;
+    padding: 2em;
+    margin-top: 2em;
+    border-radius: 10px;
+}
+
+.resource {
+    background-color: #ffffff;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 40px; /* Add spacing between resources */
+}
+
+.resource h2 {
+    color: #00796b; /* Light green for subheadings */
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.resource p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 32%; /* Three images per row with some gap */
+    height: auto; /* Maintain aspect ratio */
+}
+
+footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+footer a {
+    color: #1e88e5; /* Distinct blue color for the attributions link */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    color: #004d40;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: #00796b;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #00796b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, textarea, button {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+}
+
+input, textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-bottom: 1em;
+    }
+}
+
+.group-image,
+.resource {
+    margin-bottom: 2em;
+}
+
+@media (max-width: 768px) {
+    .group-image {
+        width: calc(50% - 10px); /* Adjust image width for smaller screens */
+    }
+}
