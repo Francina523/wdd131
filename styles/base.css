@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    background-color: #eb97c7;
+    background-color: #6b7f82;
     padding: 20px;
     text-align: center;
 }
@@ -48,7 +48,7 @@ main {
 
 .card {
     grid-row: 1/5;
-    background-color: #eb97c7;
+    background-color: #6B7F82;
     border: 1px solid #9b6095;
     border-radius: 5px;
     padding: 10px;
@@ -85,5 +85,5 @@ main section img {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #eb97c7;
+    background-color: #6B7F82;
 }
